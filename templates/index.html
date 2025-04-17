@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voting Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Vote for Your Favorite Option</h1>
+        <form>
+            <input type="radio" name="option" value="Option 1"> Cat <br><br>
+            <input type="radio" name="option" value="Option 2"> Dog <br><br>
+            <input type="radio" name="option" value="Option 3"> Horse<br><br>
+            <button type="button" onclick="window.location.href='/results'">Submit Vote</button>
+        </form>
+    </div>
+</body>
+</html>
